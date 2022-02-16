@@ -1,0 +1,87 @@
+/* google font linked */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    ;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    ;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 700;
+    ;
+}
+
+.container {
+    display: flex;
+    margin: 20px;
+    border-radius: 5px;
+    background-color: rgb(143, 255, 255);
+}
+
+.image {
+    width: 50%;
+    padding: 20px;
+}
+
+.image img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.calculation {
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+h3 {
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.input-field {
+    display: flex;
+    margin-top: 10px;
+}
+
+input {
+    height: 25px;
+    border-radius: 5px;
+    border: none;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: rgba(240, 209, 209, 0.671);
+}
+
+.calculate-btn {
+    padding: 10px 40px;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: tomato;
+}
+
+.savings-btn {
+    padding: 5px 10px;
+    margin-left: 5px;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: tomato;
+}
