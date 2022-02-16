@@ -26,7 +26,7 @@
                     <div class="income-field">
                         <div class="input-field">
                             <label for="">Income:</label>
-                            <input id="income" type="text">
+                            <input value="0" style="text-align: center;" id="income" type="text">
                         </div>
                     </div>
                     <!-- expenses -->
@@ -34,24 +34,21 @@
                     <div class="food-field">
                         <div class="input-field">
                             <label for="">Food:</label>
-                            <input id="food" type="text">
+                            <input value="0" style="text-align: center;" id="food" type="text">
                         </div>
                     </div>
                     <div class="Rent-field">
                         <div class="input-field">
                             <label for="">Rent:</label>
-                            <input id="rent" type="text">
+                            <input value="0" style="text-align: center;" id="rent" type="text">
                         </div>
                     </div>
                     <div class="clothes-field">
                         <div class="input-field">
                             <label for="">Clothes:</label>
-                            <input id="clothes" type="text">
+                            <input value="0" style="text-align: center;" id="clothes" type="text">
                         </div>
                     </div>
-                    <!-- Error message -->
-                    <p id="message-1" class="error-message">Warning: You need to enter number !</p>
-                    <p id="message-2" class="error-message">You can't expense more than your income !</p>
                     <!-- btn -->
                     <button id="calculate-btn" class="calculate-btn">Calculate</button>
                     <!-- result section -->
@@ -60,15 +57,19 @@
                     <!-- savings -->
                     <div class="input-field">
                         <label for="">Save: </label>
-                        <input id="savings" type="text">
+                        <input value="0" style="text-align: center;" id="savings" type="text">
                         <p style="font-size: 18px; font-weight: 600;">%</p>
                         <button id="savings-btn" class="savings-btn">Save</button>
                     </div>
-                    <!-- error message -->
-                    <p id="message-3" class="error-message">You have not enough money to save !</p>
                     <!-- savings section -->
                     <h3>Saving Amount: <span id="saving-amount">00</span></h3>
                     <h3>Remaining Balance: <span id="remaining-balance">00</span></h3>
+
+                    <!-- Error message -->
+                    <p id="message-1" class="error-message">You need to enter number !</p>
+                    <p id="message-2" class="error-message">You can't expense more than your income !</p>
+                    <p id="message-3" class="error-message">You can't enter a negative value !</p>
+                    <p id="message-4" class="error-message">You have not enough money to save !</p>
                 </div>
             </div>
         </section>
