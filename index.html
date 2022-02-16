@@ -53,22 +53,22 @@
                     <p id="message-1" class="error-message">Warning: You need to enter number !</p>
                     <p id="message-2" class="error-message">You can't expense more than your income !</p>
                     <!-- btn -->
-                    <button class="calculate-btn">Calculate</button>
+                    <button id="calculate-btn" class="calculate-btn">Calculate</button>
                     <!-- result section -->
-                    <h3>Total Expenses: 00</h3>
-                    <h3>Balance: 00</h3>
+                    <h3>Total Expenses: <span id="total-expenses">00</span></h3>
+                    <h3>Balance: <span id="balance">00</span></h3>
                     <!-- savings -->
                     <div class="input-field">
                         <label for="">Save: </label>
                         <input id="savings" type="text">
                         <p style="font-size: 18px; font-weight: 600;">%</p>
-                        <button class="savings-btn">Save</button>
+                        <button id="savings-btn" class="savings-btn">Save</button>
                     </div>
                     <!-- error message -->
                     <p id="message-3" class="error-message">You have not enough money to save !</p>
                     <!-- savings section -->
-                    <h3>Saving Amount: 00</h3>
-                    <h3>Remaining Balance: 00</h3>
+                    <h3>Saving Amount: <span id="saving-amount">00</span></h3>
+                    <h3>Remaining Balance: <span id="remaining-balance">00</span></h3>
                 </div>
             </div>
         </section>
