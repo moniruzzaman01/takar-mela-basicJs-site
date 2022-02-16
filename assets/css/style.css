@@ -53,6 +53,8 @@ h3 {
 .input-field {
     display: flex;
     margin-top: 10px;
+    justify-content: center;
+    ;
 }
 
 input {
@@ -84,4 +86,16 @@ input {
     border: none;
     cursor: pointer;
     background-color: tomato;
+}
+
+.error-message{
+    background-color: red;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    margin-top: 10px;
+    border-radius: 5px;
+    padding: 2px 40px;
+    display: none;
+    ;
 }
