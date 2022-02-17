@@ -54,7 +54,11 @@ const balance = document.getElementById('balance')
 document.getElementById('calculate-btn').addEventListener('click', function () {
     const income = document.getElementById('income').value
     const expenses = getExpenses()
-    if (income < expenses) {
+    if (isNaN(income)) {
+        error(1)
+    } else if (income < 0) {
+        error(3)
+    } else if (income < expenses) {
         error(2)
     } else {
         // expenses set
@@ -68,26 +72,29 @@ document.getElementById('savings-btn').addEventListener('click', function () {
     const savingAmountField = document.getElementById('saving-amount')
     const remainingBalanceField = document.getElementById('remaining-balance')
     const savingsRate = parseInt(document.getElementById('savings').value)
-    if (isNaN(savingsRate)) {
-        error(1)
-    } else if (savingsRate < 0) {
-        error(3)
-    } else {
-        // savings count
-        const savingAmount = income * (savingsRate / 100)
-        // savings amount set
-        savingAmountField.innerText = savingAmount;
-        // remaining balance set
-        remainingBalanceField.innerText = getSub(balance.innerText, savingAmount)
+    const savingAmount = income * (savingsRate / 100)
+    if (balance.innerText != 0) {
+        if (isNaN(savingsRate)) {
+            error(1)
+        } else if (savingsRate < 0) {
+            error(3)
+        } else if (savingAmount > balance.innerText) {
+            error(4)
+        } else {
+            // savings count
+            // savings amount set
+            savingAmountField.innerText = savingAmount;
+            // remaining balance set
+            remainingBalanceField.innerText = getSub(balance.innerText, savingAmount)
+        }
     }
 
 
 })
 // clear the previous value of input
 const inputs = document.getElementsByTagName('input')
-for(const input of inputs)
-{
-    input.addEventListener('click',function(){
-        this.value=''
+for (const input of inputs) {
+    input.addEventListener('click', function () {
+        this.value = ''
     })
 }
